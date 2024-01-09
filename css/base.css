@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul,
+ol {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+.hui-ding {
+    position: fixed;
+    width: 49px;
+    height: 44px;
+    right: 200px;
+    z-index: 100;
+    bottom: 100px;
+    background-image: url(../../images/sprite.png);
+    background-position: -326px -46px;
+    cursor: pointer;
+}
+
+.hui-ding:hover {
+    width: 49px;
+    height: 44px;
+    background-image: url(../../images/sprite.png);
+    background-position: -266px -46px;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    /* 内边距 */
+    border: none;
+    /* 内部颜色 */
+    background-color: transparent;
+    /* 外边距 */
+    outline: none;
+}
+
+.img-center {
+    width: 100%;
+    display: block;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.fl-not::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+/* 文字长度达到本文档给的宽高会变成... */
+.txt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    /* 修改鼠标指针样式为手型 */
+    cursor: pointer;
+    /* 取消下划线 */
+    text-decoration: none;
+    /* 继承父元素颜色 */
+    color: inherit;
+
+}
